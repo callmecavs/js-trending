@@ -1,5 +1,5 @@
 const micro = require('micro')
 
-async function () {
+module.exports = async function (req, res) {
 
 }
