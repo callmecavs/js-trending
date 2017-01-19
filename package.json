@@ -1,13 +1,36 @@
 {
-  "name": "gh-trending",
+  "name":        "js-trending",
+  "description": "GitHub's trending JavaScript repositories as a microservice.",
+
+  "version": "0.0.1",
+  "license": "MIT",
+
+  "repository": "callmecavs/js-trending",
+
+  "author": {
+    "name":  "Michael Cavalea",
+    "email": "callmecavs@gmail.com",
+    "url":   "http://callmecavs.com/"
+  },
+
   "scripts": {
     "lint": "standard",
-    "start": "micro"
+    "start": "micro -p 3000"
   },
+
+  "engines": {
+    "node": ">=6.0.0"
+  },
+
+  "keywords": [
+    "trending"
+  ],
+
   "dependencies": {
     "micro": "^6.2.0",
     "x-ray": "^2.3.1"
   },
+
   "devDependencies": {
     "standard": "^8.6.0"
   }
