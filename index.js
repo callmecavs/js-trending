@@ -1,7 +1,7 @@
 const { send } = require('micro')
 const xray = require('x-ray')()
 
-const selectors = {
+const repo = {
   full: 'div:nth-child(1) a',
   href: 'div:nth-child(1) a@href',
   desc: 'div:nth-child(3) p',
@@ -45,7 +45,7 @@ const cleanup = res => (error, list) => {
 }
 
 const scrape = async (req, res) => {
-  xray('https://github.com/trending/javascript', '.repo-list li', [selectors])(cleanup(res))
+  xray('https://github.com/trending/javascript', '.repo-list li', [repo])(cleanup(res))
 }
 
 module.exports = scrape
