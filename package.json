@@ -1,15 +1,13 @@
 {
   "name": "gh-trending",
-
   "scripts": {
     "lint": "standard",
     "start": "micro"
   },
-
   "dependencies": {
-    "micro": "^6.2.0"
+    "micro": "^6.2.0",
+    "x-ray": "^2.3.1"
   },
-
   "devDependencies": {
     "standard": "^8.6.0"
   }
