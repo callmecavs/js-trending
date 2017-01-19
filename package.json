@@ -1,0 +1,11 @@
+{
+  "name": "gh-trending",
+
+  "scripts": {
+    "start": "micro"
+  },
+
+  "dependencies": {
+    "micro": "^6.2.0"
+  }
+}
